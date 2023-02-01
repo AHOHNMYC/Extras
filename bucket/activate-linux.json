@@ -1,0 +1,28 @@
+{
+    "version":  "v1.1.0",
+    "license":  "GPL-3.0-only",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/MrGlockenspiel/activate-linux/releases/download/v1.1.0/activate-windows-clang64.exe#/activate-linux.exe",
+            "hash": "ECF82652CCDD7BAD962EFFB378B198B357DB5FDA0EE5380B39F6F648CD13A94C"
+        },
+        "32bit": {
+            "url": "https://github.com/MrGlockenspiel/activate-linux/releases/download/v1.1.0/activate-windows-mingw32.exe#/activate-linux.exe",
+            "hash": "38BD8F673E2387E0080F2BE17375314D6251D127FB4F13B3C7A47DE6EC64B7E6"
+        }
+    },
+    "notes":  "The 'Activate Windows' watermark ported to Linux with cairo in C and then backported to Windows",
+    "bin":  "activate-linux.exe",
+    "homepage":  "https://github.com/MrGlockenspiel/activate-linux",
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/MrGlockenspiel/activate-linux/releases/download/$version/activate-windows-clang64.exe#/activate-linux.exe"
+            },
+            "32bit": {
+                "url": "https://github.com/MrGlockenspiel/activate-linux/releases/download/$version/activate-windows-mingw32.exe#/activate-linux.exe"
+            }
+        }
+    }
+}
